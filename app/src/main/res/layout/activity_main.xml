@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFADD5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Reminder App"
+        style="@style/style1" />
+
+    <EditText
+        android:id="@+id/edtreminder"
+        style="@style/style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your note here"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/days"
+        />
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdAM"
+            style="@style/style1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="6-11AM" />
+
+        <RadioButton
+            android:id="@+id/rdPM"
+            style="@style/style1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="12-11PM" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnadd"
+        style="@style/style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD" />
+
+    <TextView
+        android:id="@+id/txtresult"
+        style="@style/style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:visibility="gone" />
+</androidx.appcompat.widget.LinearLayoutCompat>

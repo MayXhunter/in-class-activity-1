@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">in-class-activity-1</string>
+    <string-array name="days">
+        <item>sunday</item>
+        <item>monday</item>
+        <item>tuesday</item>
+        <item>wednesday</item>
+        <item>thursday</item>
+        <item>Friday</item>
+        <item>Satarday</item>
+
+    </string-array>
+</resources>
